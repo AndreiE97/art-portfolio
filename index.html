@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- EDIT: page title and the artist name used in the header and footer. -->
+    <title>Artist Name — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Syne:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="logo" href="#top">Artist Name</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#statement">Statement</a>
+        <a href="#work">Work</a>
+        <a href="#bio">Bio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="Introduction">
+        <div class="hero-copy">
+          <!-- EDIT: name, headline, and short line. -->
+          <p class="brand">Andrei Espiritu</p>
+          <h1>Work about the self, split and reassembled.</h1>
+          <p class="lede">Drawing, digital image, and sculpture.</p>
+          <div class="cta-group">
+            <a class="cta primary" href="#work">View work</a>
+            <a class="cta ghost" href="#statement">Read statement</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="statement" class="prose-section">
+        <header class="section-head">
+          <h2>Artist statement</h2>
+          <p class="edit-note"></p>
+        </header>
+        <!--
+          EDIT: Artist statement. Replace both paragraphs.
+          Keep the length near 200 words.
+        -->
+        <div class="prose">
+          <p>
+            Working across digital, two-dimensional, three-dimensional, and sculptural media, my art focuses on one central idea: the indomitable human spirit. To me, this can take many forms, whether through hope, perseverance, struggle, adaptation, resilience, or even spite. I explore these ideas through characters who may seem ordinary or insignificant, but whose actions give them meaning. This can be seen in a crestfallen knight brought to one knee, yet still clinging to their blade, or a struggling mother protecting her child. Though sometimes literal and other times symbolic, these moments reflect struggles and emotions I recognize within myself.
+          </p>
+          <p>
+            To me, the human spirit is not about overwhelming victory, conquest, or even winning. It is about what we do after a crushing defeat—our response to an uncaring, indifferent universe that does not give us a second thought. I am interested in that choice to continue, whether driven by hope, responsibility, stubbornness, or even spite.
+
+By portraying everyday people and unnamed individuals rather than extraordinary heroes, I want viewers to recognize something of themselves within these characters. Their struggles can be small or grand, righteous or petty. What matters is not whether they win, but that despite everything, they are still here.
+
+
+
+          </p>
+        </div>
+      </section>
+
+      <section id="work" class="work">
+        <header class="section-head">
+          <h2>Selected work</h2>
+          <p class="edit-note"></p>
+        </header>
+        <div class="gallery" id="gallery"></div>
+      </section>
+
+      <section id="bio" class="prose-section">
+        <header class="section-head">
+          <h2>Bio</h2>
+          <p class="edit-note"></p>
+        </header>
+        <!--
+          EDIT: Bio. Replace the paragraphs below.
+          Fill in the bracketed spots: name, city, and a sentence about
+          study, exhibitions, or collaborators. Keep the length near 100–150 words.
+        -->
+        <div class="prose">
+          <p>
+            Andrei Espiritu is a Filipino artist born and raised in Manila, Philippines, currently pursuing a Bachelor of Fine Arts in Digital Media Art at San Jose State University. Their earliest introduction to art came through American cartoons, which captivated them long before they could understand the English language, sparking an early appreciation for visual storytelling.
+          </p>
+          <p>
+            Working across sculpture, traditional and digital illustration, painting, and 3D design, their artistic practice explores themes of perseverance, struggle, and the indomitable human spirit. Drawing inspiration from the Dark Souls video game series, their work often focuses on individuals confronting overwhelming circumstances, emphasizing resilience and determination in the face of adversity.
+
+As an emerging artist, they continue to explore different mediums and approaches to storytelling. They are scheduled to participate in a group exhibition at the Hammer Theatre in San Jose, California, in Spring 2027.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <header class="section-head">
+          <h2>Contact</h2>
+          <p>Commissions and studio visits by request.</p>
+        </header>
+        <!-- EDIT: replace this email address. -->
+        <a class="cta primary" href="mailto:your.email@example.com">andrei.espiritu@sjsu.edu</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Andrei Espiritu</p>
+    </footer>
+
+    <dialog id="viewer" aria-labelledby="viewer-title">
+      <button class="viewer-close" id="viewer-close" type="button">Close</button>
+      <img id="viewer-image" alt="" />
+      <div class="viewer-copy" id="viewer-copy"></div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
